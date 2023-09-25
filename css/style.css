@@ -28,6 +28,7 @@ ul, li {
     width: 100%;
     max-height: 700px;
     background-color: darkgray;
+    border: 1px solid black;
 }
 
 
@@ -63,7 +64,7 @@ ul, li {
     border:1px solid black;
 
 }
-.check-box checkbox {
+.container-small .check-box  {
     display: flex;
     flex-direction: row;
 }
@@ -76,4 +77,11 @@ ul, li {
 .row {
     display: flex;
     width: calc(100% / 3);
+}
+
+.col-large {
+    width: calc(100% / 3);
+    border: 1px solid black;
+    height: 400px;
+    
 }
