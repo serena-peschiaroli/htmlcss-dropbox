@@ -56,6 +56,7 @@ ul, li {
 
 .row {
     display: flex;
+    justify-content: space-between;
     
 }
 
@@ -163,19 +164,11 @@ ul, li {
 }
 
 .scard {
-    flex-basis: calc(33.33% - 1rem); 
+    flex-basis: calc(30% - 1rem); 
     margin-bottom: 1rem; 
     border: 1px solid black;
     padding: 1rem;
     box-sizing: border-box;
-}
-
-
-.col-large {
-    width: calc(100% / 3);
-    border: 1px solid black;
-    height: 400px;
-    
 }
 
 .img-partner , .img-partner-text {
@@ -191,4 +184,27 @@ ul, li {
 
 .img-partner-text {
     width: 40%;
+}
+
+.col-large {
+    width: calc(100% / 3);
+    border: 1px solid black;
+    height: 400px;
+    
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left,
+.right {
+    width: calc(50% - 0.5rem); /* Adjust for spacing between columns */
+}
+
+.left img,
+.right img {
+    margin-bottom: 1rem; /* Add spacing between images */
 }
