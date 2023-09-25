@@ -31,15 +31,33 @@ ul, li {
     border: 1px solid black;
     gap:  0.5rem;
     flex-direction: row;
+    display: flex;
 }
 
+.sx-part {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dx-part {
+    justify-content: flex-end;
+    align-items: center;
+}
 .container-large {
     width: 100%;
     max-height: 700px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     background-color: darkgray;
     border: 1px solid black;
 }
 
+.row {
+    display: flex;
+    
+}
 
 .wrapper {
     width: 80%;
@@ -75,6 +93,10 @@ ul, li {
 .container-small {
     width: 60%;
     margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     background-color: lightgreen;
     border:1px solid black;
 
@@ -94,10 +116,39 @@ ul, li {
     flex-direction: row;
 }
 
+.flex-cards {
 
-.card {
-    
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: lightgreen;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: stretch; 
 }
+
+.card-1,
+.card-1,
+.card-3 {
+    flex: 1;
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+
+.card-4 {
+    flex: 2; 
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+
+
+
 
 .btn-blue {
     background-color: blue;
@@ -105,14 +156,39 @@ ul, li {
     padding: 2px;
 }
 
-.row {
+.row-flex {
     display: flex;
-    width: 100%
+    flex-wrap: wrap; 
+    justify-content: space-between; 
 }
+
+.scard {
+    flex-basis: calc(33.33% - 1rem); 
+    margin-bottom: 1rem; 
+    border: 1px solid black;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
 
 .col-large {
     width: calc(100% / 3);
     border: 1px solid black;
     height: 400px;
     
+}
+
+.img-partner , .img-partner-text {
+    flex-direction: row;
+    justify-content: center;
+   
+    
+}
+
+.img-partner {
+    width: 40%;
+}
+
+.img-partner-text {
+    width: 40%;
 }
