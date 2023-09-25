@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+}
+
+.head-logo {
+   width: 100px;
+}
+
 ul, li {
     list-style-type: none;
 }
@@ -14,14 +22,15 @@ ul, li {
     display: flex;
     flex-direction: row;
     /* d */
-    background-color: gray;
+    background-color: white;
     border: 1px solid black
-
 }
 .sx-part, .dx-part {
     width: 50%;
     background-color: brown;
     border: 1px solid black;
+    gap:  0.5rem;
+    flex-direction: row;
 }
 
 .container-large {
@@ -43,6 +52,13 @@ ul, li {
     
 }
 
+.hero-h {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 .hero-text {
     width: 30%;
     background-color: aquamarine;
@@ -59,24 +75,39 @@ ul, li {
 .container-small {
     width: 60%;
     margin: 0 auto;
-    display: flex;
     background-color: lightgreen;
     border:1px solid black;
 
 }
-.container-small .check-box  {
+
+.check-box-container {
+    width: 60%;
+    margin: 0 auto;
+    background-color: lightgreen;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.check-box-container .check-box {
     display: flex;
     flex-direction: row;
 }
 
 
-.btn blue {
+.card {
+    
+}
+
+.btn-blue {
     background-color: blue;
+    border: none;
+    padding: 2px;
 }
 
 .row {
     display: flex;
-    width: calc(100% / 3);
+    width: 100%
 }
 
 .col-large {
