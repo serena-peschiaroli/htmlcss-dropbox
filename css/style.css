@@ -8,17 +8,79 @@ img {
     width: 100%;
 }
 
-.head-logo {
-   width: 100px;
+/* LAYOUT */
+.container-large {
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: darkgray;
+    border: 1px solid black;
+}
+
+.container-small {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: lightgreen;
+    border:1px solid black;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.wrapper {
+    width: 80%;
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+    /* d */
+    background-color: aquamarine;
+    border: 1px solid black;
+    
+}
+/* /LAYOUT */
+
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.main-section {
+    padding: 2rem 0;
+}
+
+.col-60 {
+    width: 60%;
 }
 
 ul, li {
     list-style-type: none;
 }
+/* HEADER */
+header nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.head-logo {
+   width: 100px;
+}
+
 
 .head-container {
     width: 100%;
-    height: 100px;
+    height: 5rem;
+    padding:0 1rem;
     display: flex;
     flex-direction: row;
     /* d */
@@ -43,33 +105,9 @@ ul, li {
     justify-content: flex-end;
     align-items: center;
 }
-.container-large {
-    width: 100%;
-    max-height: 700px;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    background-color: darkgray;
-    border: 1px solid black;
-}
 
-.row {
-    display: flex;
-    justify-content: space-between;
-    
-}
+/* HEADER */
 
-.wrapper {
-    width: 80%;
-    display:flex;
-    justify-content: center;
-    margin: 0 auto;
-    /* d */
-    background-color: aquamarine;
-    border: 1px solid black;
-    
-}
 
 .hero-h {
     text-align: center;
@@ -91,17 +129,7 @@ ul, li {
     border:1px solid black;
 }
 
-.container-small {
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    background-color: lightgreen;
-    border:1px solid black;
 
-}
 
 .check-box-container {
     width: 60%;
@@ -189,22 +217,130 @@ ul, li {
 .col-large {
     width: calc(100% / 3);
     border: 1px solid black;
-    height: 400px;
+    /* height: 400px; */
     
 }
-
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-.left,
-.right {
-    width: calc(50% - 0.5rem); /* Adjust for spacing between columns */
+.center img {
+    padding-bottom: 1rem;
+   
+    scale: 0.7;
 }
+
+.center p {
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+/* .left,
+.right {
+    width: calc(50% - 0.5rem); 
+} */
 
 .left img,
 .right img {
     margin-bottom: 1rem; /* Add spacing between images */
 }
+
+.left ,  .right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.inner-square {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    flex: 50%;
+    padding: 0 4px;
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+}
+
+
+.logos {
+    display: inline-flex;
+    flex-direction:column;
+    position: relative;
+}
+
+.image {
+   
+    object-fit:contain;
+    max-height: 100px;
+    max-width: 100px;
+
+
+}
+
+.designit  {
+    background-color: lightgreen;
+}
+
+.topps {
+    background-color: red;
+    
+}
+
+.arizona {
+    background-color: brown;
+
+}
+
+
+.uf {
+    background-color: lightblue;
+
+}
+
+.bike {
+    background-color: red;
+
+}
+
+.hearst {
+
+    background-color: azure;
+}
+
+.lonely {
+    background-color: blue;
+
+}
+
+.clear {
+    background-color: yellow;
+
+} 
+
+
+
+
+/* .inner-square { */
+    /* display: flex;
+  
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .inner-square > div img {
+    margin-top: calc(10px / 2 * 2);
+    width: calc(100% / 2 - 10px / 2);
+  } */
