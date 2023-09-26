@@ -16,6 +16,10 @@ header {
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+a , i {
+    color: black;
+}
 /* LAYOUT */
 
 .row {
@@ -113,9 +117,21 @@ body {
     width: 40%;
 }
 
+.col-100 {
+    width: 100%;
+}
 ul, li {
     list-style-type: none;
 }
+
+.mgb-2 {
+    margin-bottom: 2rem;
+}
+
+.mgt-2 {
+    margin-top: 2rem;
+}
+
 /* HEADER */
 header nav ul {
     display: flex;
@@ -227,9 +243,12 @@ header nav ul {
 
 .card-top{
     border: 1px solid black;
-    height: 3rem;
+    height: 2rem;
     align-items: center;
     text-align: center;
+    text-decoration: none;
+    font-size: 0.8rem;
+    line-height: 1.9rem;
 }
 
 .flex-cards {
@@ -259,14 +278,14 @@ header nav ul {
 }
 
 
-.card-1, .card-2, .card-3 {
+.card-1, .card-2, .card-3, .card-4 {
     border: 1px solid rgb(46, 45, 45);
     padding-bottom: 5rem;
     padding-left: 0.5rem;
    
 }
 
-.card-1, .card-2, .card-3 .btn {
+.card-1, .card-2, .card-3, .card-4, .btn {
     padding: 0.5rem;
 }
 
@@ -275,8 +294,19 @@ header nav ul {
     border: 1px solid black;
     padding: 1rem;
     font-size: 1rem;
+    margin-bottom: 10rem;
 }
 
+.card-4 h4, h5, p {
+    padding: 0.8rem;
+}
+
+.card-4 p {
+    font-size: 0.8rem;
+}
+
+
+/* PARTNER */
 
 
 
@@ -295,20 +325,9 @@ header nav ul {
     box-sizing: border-box;
 }
 
-.img-partner , .img-partner-text {
-    flex-direction: row;
-    justify-content: center;
-   
-    
-}
 
-.img-partner {
-    width: 40%;
-}
 
-.img-partner-text {
-    width: 40%;
-}
+
 
 .col-large {
     width: calc(100% / 3);
