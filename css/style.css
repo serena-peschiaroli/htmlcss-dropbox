@@ -189,18 +189,43 @@ header nav ul {
 }
 /* /HERO */
 
+/* PLANS FORM */
 .check-box-container {
     width: 60%;
     margin: 0 auto;
-    background-color: lightgreen;
-    border: 1px solid black;
-    display: flex;
+     /* display: flex;
     flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+    word-wrap: break-word;  */
+    white-space: nowrap;
+    gap: 1rem;
+    padding-top: 5rem;
 }
 
-.check-box-container .check-box {
-    display: flex;
-    flex-direction: row;
+.check-box-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+    
+
+
+
+
+.check-box {
+    /* display: flex;
+    flex-direction: row; */
+    vertical-align: top;
+    display:inline-block;
+    gap: 1rem;
+}
+.checkbox-label {
+    white-space: normal;
+    display:inline-block
 }
 
 .flex-cards {
