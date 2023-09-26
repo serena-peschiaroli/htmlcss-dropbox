@@ -12,6 +12,7 @@ img {
 .container-large {
     width: 80%;
     max-width: 1200px;
+    margin: 0 auto;
     margin-top: 3rem;
     margin-bottom: 3rem;
     padding-top: 4rem;
@@ -99,11 +100,13 @@ header nav ul {
 .sx-part {
     justify-content: flex-start;
     align-items: center;
+    padding-left: 2rem;
 }
 
 .dx-part {
     justify-content: flex-end;
     align-items: center;
+    padding-right: 2rem;
 }
 
 /* HEADER */
@@ -344,3 +347,11 @@ header nav ul {
     margin-top: calc(10px / 2 * 2);
     width: calc(100% / 2 - 10px / 2);
   } */
+
+
+
+  /* FOOTER */
+
+  footer {
+    background-color: black;
+  }
