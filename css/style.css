@@ -40,8 +40,7 @@ body {
     margin-bottom: 3rem;
     padding-top: 4rem;
     padding-bottom: 4rem; */
-    background-color: lightgreen;
-    border:1px solid black;
+   
 
 }
 
@@ -234,11 +233,8 @@ header nav ul {
 }
 
 .flex-cards {
-     margin-top: 3rem;
-    /*margin-bottom: 3rem; */
-    /* padding: 2rem; */
-    background-color: lightgreen;
-    border: 1px solid black;
+    margin-top: 3rem;
+    margin-bottom: 3rem; 
     flex-direction: row;
     font-size: 0.8rem;
     
@@ -257,16 +253,21 @@ header nav ul {
     padding-bottom: 0.2rem;
 }
 
-.card ul, li, a, .btn {
-    padding-top: 0.8rem;
-    padding-bottom: 0.5rem;
+.card-1, .card-2, .card-3 ul, li, span, a {
+    padding: 0.5rem
+    
 }
 
 
-.card {
-    border: 1px solid black;
-    padding: 0.5rem;
+.card-1, .card-2, .card-3 {
+    border: 1px solid rgb(46, 45, 45);
+    padding-bottom: 5rem;
+    padding-left: 0.5rem;
    
+}
+
+.card-1, .card-2, .card-3 .btn {
+    padding: 0.5rem;
 }
 
 
