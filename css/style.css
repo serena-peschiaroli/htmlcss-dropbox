@@ -7,6 +7,11 @@
 img {
     width: 100%;
 }
+header {
+    background-color: azure;
+    padding-bottom: 2rem;
+    
+}
 
 /* LAYOUT */
 .container-large {
@@ -17,8 +22,6 @@ img {
     margin-bottom: 3rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    background-color: darkgray;
-    border: 1px solid black;
 }
 
 .container-small {
@@ -44,10 +47,38 @@ img {
     display:flex;
     justify-content: center;
     margin: 0 auto;
-    /* d */
-    background-color: aquamarine;
-    border: 1px solid black;
+     
+}
+
+
+.head-container {
+    width: 100%;
+    height: 5rem;
+    padding:0 1rem;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    left:0; 
+    z-index: 999px;
+}
+
+
+.btn {
+   
+    border: none;
+    padding: 0.4rem;
     
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+}
+
+.small {
+    width: 4rem;
 }
 /* /LAYOUT */
 
@@ -64,6 +95,16 @@ img {
     width: 60%;
 }
 
+.col-70 {
+    width:70%;
+}
+.col-30 {
+    width: 30%;
+}
+.col-40 {
+    width: 40%;
+}
+
 ul, li {
     list-style-type: none;
 }
@@ -78,61 +119,64 @@ header nav ul {
 }
 
 
-.head-container {
-    width: 100%;
-    height: 5rem;
-    padding:0 1rem;
-    display: flex;
-    flex-direction: row;
-    /* d */
-    background-color: white;
-    border: 1px solid black
-}
+
 .sx-part, .dx-part {
     width: 50%;
-    background-color: brown;
-    border: 1px solid black;
-    gap:  0.5rem;
+    gap:  2rem;
     flex-direction: row;
     display: flex;
+    line-height: 5rem;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
 }
 
 .sx-part {
     justify-content: flex-start;
-    align-items: center;
-    padding-left: 2rem;
+    
+    padding-left: 1rem;
 }
 
 .dx-part {
     justify-content: flex-end;
-    align-items: center;
-    padding-right: 2rem;
+    
+    padding-right: 1rem;
+    gap: 2rem;
 }
 
-/* HEADER */
+/* /HEADER */
 
+
+/* HERO */
 
 .hero-h {
     text-align: center;
     font-size: 3rem;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
     padding-bottom: 1rem;
 }
 
 .hero-text {
-    width: 30%;
-    background-color: aquamarine;
-    border: 1px solid black;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+    font-size: 0.8rem
 
 }
-
-.hero-img {
-    width: 70%;
-    background-color: aquamarine;
-    border:1px solid black;
+.hero-text p {
+    padding: 1rem 0 0 1rem;
 }
 
 
+
+.jumbo {
+    position: relative;
+    top: 40px;
+    left: 20px;
+    scale: 1.1 ;
+}
+/* /HERO */
 
 .check-box-container {
     width: 60%;
@@ -182,11 +226,7 @@ header nav ul {
 
 
 
-.btn-blue {
-    background-color: blue;
-    border: none;
-    padding: 2px;
-}
+
 
 .row-flex {
     display: flex;
@@ -224,7 +264,7 @@ header nav ul {
     
 }
 .center {
-    height: 300px;
+    height: 400px;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -249,7 +289,8 @@ header nav ul {
 
 .left img,
 .right img {
-    margin-bottom: 1rem; /* Add spacing between images */
+    margin-bottom: 1rem;
+
 }
 
 .left ,  .right {
@@ -271,8 +312,8 @@ header nav ul {
     flex: 50%;
     padding: 0 4px;
     border: 1px solid black;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 
 
@@ -287,6 +328,9 @@ header nav ul {
     object-fit:contain;
     max-height: 100px;
     max-width: 100px;
+    /* filter: brightness(0) invert(1) */
+    fill: white;
+   
 
 
 }
@@ -318,7 +362,7 @@ header nav ul {
 
 .hearst {
 
-    background-color: azure;
+    background-color: rgb(174, 237, 237);
 }
 
 .lonely {
