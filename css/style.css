@@ -16,8 +16,13 @@ header {
 body {
     font-family: 'Open Sans', sans-serif;
 }
-
 /* LAYOUT */
+
+.row {
+    display: flex;
+    
+}
+
 .container-large {
     width: 80%;
     max-width: 1200px;
@@ -31,20 +36,16 @@ body {
 .container-small {
     width: 60%;
     margin: 0 auto;
-    margin-top: 3rem;
+    /* margin-top: 3rem;
     margin-bottom: 3rem;
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 4rem; */
     background-color: lightgreen;
     border:1px solid black;
 
 }
 
-.row {
-    display: flex;
-    justify-content: space-between;
-    
-}
+
 
 .wrapper {
     width: 80%;
@@ -213,9 +214,6 @@ header nav ul {
 }
     
 
-
-
-
 .check-box {
     /* display: flex;
     flex-direction: row; */
@@ -228,31 +226,41 @@ header nav ul {
     display:inline-block
 }
 
+.card-top{
+    border: 1px solid black;
+    height: 3rem;
+    align-items: center;
+}
 .flex-cards {
-
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    padding: 2rem;
+    /* margin-top: 3rem;
+    margin-bottom: 3rem; */
+    /* padding: 2rem; */
     background-color: lightgreen;
     border: 1px solid black;
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between; 
-    align-items: stretch; 
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    font-size: 0.8rem;
+    gap: 1rem;
+    
 }
+.flex-cards .row {
+    justify-content: space-between;
+}
+
 
 .card-1,
 .card-1,
 .card-3 {
-    flex: 1;
     border: 1px solid black;
-    padding: 1rem;
-    font-size: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    
+   
 }
 
 
 .card-4 {
-    flex: 2; 
     border: 1px solid black;
     padding: 1rem;
     font-size: 1rem;
