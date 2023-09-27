@@ -283,7 +283,7 @@ header nav ul{
 } 
 
 .card-top{
-    border: 1px solid black;
+    border: 1px solid rgb(106, 105, 105);
     height: 2rem;
     align-items: center;
     text-align: center;
@@ -320,7 +320,7 @@ header nav ul{
 
 
 .card-1, .card-2, .card-3, .card-4 {
-    border: 1px solid rgb(46, 45, 45);
+    border: 1px solid rgb(106, 105, 105);
     padding-bottom: 5rem;
     padding-left: 0.5rem;
     display: flex;
@@ -334,7 +334,7 @@ header nav ul{
 
 
 .card-4 {
-    border: 1px solid black;
+    border: 1px solid rgb(106, 105, 105);
     border-right: none;
     border-top: none;
     padding: 1rem;
@@ -352,7 +352,7 @@ header nav ul{
 
 
 .card-5{
-    border: 1px solid black;
+    border: 1px solid rgb(106, 105, 105);
     border-left: none;
     border-top: none;
 
@@ -592,10 +592,11 @@ header nav ul{
 
 /* FAQ */
 
+h1.faq-title  {
+    text-align: center;
+}
+
 .faq {
-    /* display:flex;
-    flex-direction: row;
-    text-align: center; */
     width: 100%;
     position: relative;
 
@@ -616,34 +617,17 @@ header nav ul{
     margin-left: 10rem;
 }
 
-/* .chev-answer {
-    display: none;
-    position: absolute;
-    position: bottom 10px;
-    z-index: 1;
-
-}
-.answer {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    background-color: lightgrey;
-    width: 100%;
-    height: 2rem;
-
-}
-
-.question:hover .answer {
-    display: block;
-    width: 40rem;
-} */
-
-
-
 .question {
     cursor: pointer; 
     position: relative; 
 
+}
+.question[aria-expanded="true"] .answer {
+    display: block;
+}
+
+.question[aria-expanded="true"] .chev i {
+    transform: rotate(180deg);
 }
 
 .answer {
@@ -655,25 +639,13 @@ header nav ul{
     z-index: 999;
     top: 100%; 
     left: 0;
-    /* opacity: 0;
-    transition: opacity 0.3s ease-in-out;  */
     pointer-events: none; 
 }
 
 .question:hover .answer {
     display: block;
-    /* opacity: 1; */
     pointer-events: auto; 
     width: 400px;
-}
-
-.chev-answer {
-    display: none;
-    position: relative;
-    z-index: 999;
-    top:0;
-    bottom: 30px;
-    left: 575px; 
 }
 
 .question:hover i {
@@ -682,8 +654,14 @@ header nav ul{
     
 }
 
+.question i {
+    position: relative;
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+}
+
 i {
-    transition: transform
+    transition: transform;
 }
 
 .question:hover .hr {
@@ -691,16 +669,6 @@ i {
     margin-top: 15rem;
    
 }
-
-
-
-/* .question:hover + .answer {
-    display: block;
-    width: 35rem;
-    
-   
-} */
-
 
   /* FOOTER */
 
@@ -751,3 +719,6 @@ i {
   .lang i {
     color: white;
   }
+
+
+  
