@@ -707,13 +707,30 @@ header nav ul{
     text-decoration: none;
   }
 
+  .foot_hr {
+    color: silver;
+    
+    
+  }
+
+  footer hr {
+    width: 20%;
+    
+  }
+
   .foot-top {
     padding-top: 1rem;
     padding-bottom: 2rem;
     gap: 0.5rem;
     text-align: center;
-    height: 16rem;
+    
+  }
+  .foot.bottom {
+    padding-top: 1.5rem;
   }
 
 
-  
+  .lang img {
+    width:3%;
+    height:3%;
+  }
