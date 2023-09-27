@@ -652,15 +652,16 @@ header nav ul{
     z-index: 999;
     top: 100%; 
     left: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out; 
+    /* opacity: 0;
+    transition: opacity 0.3s ease-in-out;  */
     pointer-events: none; 
 }
 
 .question:hover .answer {
     display: block;
-    opacity: 1;
+    /* opacity: 1; */
     pointer-events: auto; 
+    width: 400px;
 }
 
 .chev-answer {
@@ -672,8 +673,14 @@ header nav ul{
     left: 575px; 
 }
 
-.question:hover .chev-answer {
-    display: block;
+.question:hover i {
+    position: relative;
+    transform: rotate(180deg);
+    
+}
+
+i {
+    transition: transform
 }
 
 .question:hover .hr {
@@ -727,10 +734,17 @@ header nav ul{
   }
   .foot.bottom {
     padding-top: 1.5rem;
+    padding-bottom: 1.5rem
   }
+
+  
 
 
   .lang img {
     width:3%;
     height:3%;
+  }
+
+  .lang i {
+    color: white;
   }
