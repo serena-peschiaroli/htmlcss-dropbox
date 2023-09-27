@@ -152,6 +152,7 @@ a.btn {
     width: 20%;
 }
 
+
 ul, li {
     list-style-type: none;
 }
@@ -593,6 +594,7 @@ header nav ul{
     flex-direction: row;
     text-align: center; */
     width: 100%;
+    position: relative;
 
 }
 
@@ -644,10 +646,10 @@ header nav ul{
 .answer {
     display: none;
     position: absolute;
-    background-color: lightgrey;
+    background-color: white;
     width: 100%;
     max-width: 600px; 
-    z-index: 1;
+    z-index: 999;
     top: 100%; 
     left: 0;
     opacity: 0;
@@ -663,15 +665,21 @@ header nav ul{
 
 .chev-answer {
     display: none;
-    position: absolute;
-    z-index: 1;
+    position: relative;
+    z-index: 999;
     top:0;
-    bottom: 16;
+    bottom: 30px;
     left: 575px; 
 }
 
 .question:hover .chev-answer {
     display: block;
+}
+
+.question:hover .hr {
+
+    margin-top: 15rem;
+   
 }
 
 
@@ -688,8 +696,24 @@ header nav ul{
 
   footer {
     background-color: black;
+    color: white;
+    font-size: 0.8rem;
+    width: 100%;
+    
   }
 
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .foot-top {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    gap: 0.5rem;
+    text-align: center;
+    height: 16rem;
+  }
 
 
   
