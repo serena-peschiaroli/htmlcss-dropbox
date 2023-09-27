@@ -245,25 +245,28 @@ header nav ul{
 
 /* PLANS FORM */
 .check-box-container {
-    width: 60%;
+
+    gap: 1rem;
+    /* width: 60%;
     margin: 0 auto;
      /* display: flex;
     flex-direction: row;
     align-items: center;
     vertical-align: middle;
     word-wrap: break-word;  */
-    white-space: nowrap;
+    /* white-space: nowrap;
     gap: 1rem;
-    padding-top: 5rem;
-}
+    padding-top: 5rem;*/ 
+} 
 
-.check-box-container h1 {
+.check-title {
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
     margin: 0 auto;
     padding-top: 1rem;
     padding-bottom: 3rem;
+
 }
     
 
@@ -271,13 +274,13 @@ header nav ul{
     /* display: flex;
     flex-direction: row; */
     vertical-align: top;
-    display:inline-block;
+    /* display:inline-block; */
     gap: 1rem;
 }
 .checkbox-label {
     white-space: normal;
-    display:inline-block
-}
+    /* display:inline-block*/
+} 
 
 .card-top{
     border: 1px solid black;
