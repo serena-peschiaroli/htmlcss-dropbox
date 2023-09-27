@@ -589,9 +589,10 @@ header nav ul{
 /* FAQ */
 
 .faq {
-    display:flex;
+    /* display:flex;
     flex-direction: row;
-    text-align: center;
+    text-align: center; */
+    width: 100%;
 
 }
 
@@ -610,7 +611,7 @@ header nav ul{
     margin-left: 10rem;
 }
 
-.chev-answer {
+/* .chev-answer {
     display: none;
     position: absolute;
     position: bottom 10px;
@@ -621,17 +622,59 @@ header nav ul{
     display: none;
     position: absolute;
     z-index: 1;
-    background-color: grey;
+    background-color: lightgrey;
+    width: 100%;
+    height: 2rem;
+
 }
 
 .question:hover .answer {
     display: block;
     width: 40rem;
+} */
+
+
+
+.question {
+    cursor: pointer; 
+    position: relative; 
+
 }
 
-.question:hover{
-    background-color: yellow;
+.answer {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    width: 100%;
+    max-width: 600px; 
+    z-index: 1;
+    top: 100%; 
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; 
+    pointer-events: none; 
 }
+
+.question:hover .answer {
+    display: block;
+    opacity: 1;
+    pointer-events: auto; 
+}
+
+.chev-answer {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top:0;
+    bottom: 16;
+    left: 575px; 
+}
+
+.question:hover .chev-answer {
+    display: block;
+}
+
+
 
 /* .question:hover + .answer {
     display: block;
