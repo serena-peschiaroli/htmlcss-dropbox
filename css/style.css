@@ -437,9 +437,12 @@ header nav ul{
 .col-large {
     width: calc(100% / 3);
     border: 1px solid black;
+    height: calc(100%vw / 3);
     /* height: 400px; */
     
 }
+
+
 .center {
     height: 400px;
     overflow-x: hidden;
@@ -489,8 +492,8 @@ header nav ul{
     flex: 50%;
     padding: 0 4px;
     border: 1px solid black;
-    width: 200px;
-    height: 200px;
+    width: 50%;
+    height: 50%;
 }
 
 
